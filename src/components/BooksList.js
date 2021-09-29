@@ -2,6 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import BookItem from './BookItem';
 
+const progress = ({ chapters, currentChapter }) => {
+  const fraction = (currentChapter - 1) / chapters;
+  return Math.floor(100 * fraction);
+};
+
 const BooksList = (props) => {
   const { books } = props;
 
@@ -10,7 +15,11 @@ const BooksList = (props) => {
       {books.map((book) => (
         <BookItem
           key={book.id}
-          book={book.title}
+          title={book.title}
+          author={book.author}
+          currentChapter={book.currentChapter}
+          progress={progress(book)}
+          category={book.category}
         />
       ))}
     </ul>
@@ -20,8 +29,12 @@ const BooksList = (props) => {
 BooksList.propTypes = {
   books: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
+      author: PropTypes.string.isRequired,
+      chapters: PropTypes.number.isRequired,
+      currentChapter: PropTypes.number.isRequired,
+      category: PropTypes.string.isRequired,
     }),
   ).isRequired,
 };
