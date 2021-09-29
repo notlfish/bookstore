@@ -5,6 +5,7 @@ const AddBookForm = () => (
     <h2>Add New Book</h2>
     <form className="add-book-form">
       <input type="text" placeholder="Book title" />
+      <input type="text" placeholder="Author" />
       <select placeholder="Category">
         <option value="Fiction">Fiction</option>
         <option value="Fantasy">Fantasy</option>
