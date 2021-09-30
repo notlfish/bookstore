@@ -15,6 +15,7 @@ const BooksList = (props) => {
       {books.map((book) => (
         <BookItem
           key={book.id}
+          id={book.id}
           title={book.title}
           author={book.author}
           currentChapter={book.currentChapter}
@@ -29,7 +30,7 @@ const BooksList = (props) => {
 BooksList.propTypes = {
   books: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
       author: PropTypes.string.isRequired,
       chapters: PropTypes.number.isRequired,
