@@ -184,3 +184,52 @@ main {
   font-size: 0.813rem;
   font-weight: 300;
 }
+
+.form-container {
+  border-top: $gray-border;
+  padding-top: 1.813rem;
+  margin-top: 1.813rem;
+}
+
+.form-title {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.add-book-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.313rem;
+}
+
+.add-book-form input,
+.input-category {
+  display: block;
+  height: 2.813rem;
+  padding: 0 1.063rem;
+  line-height: 2.813rem;
+  font-size: 1rem;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+  width: 26.7%;
+  border: $gray-border;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.input-submit {
+  display: block;
+  background-color: $theme-color;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 15.4%;
+  height: 2.813rem;
+  line-height: 2.813rem;
+  text-align: center;
+  font-size: 0.813rem;
+  font-weight: bold;
+}
