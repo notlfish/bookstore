@@ -213,11 +213,15 @@ main {
   line-height: 2.813rem;
   font-size: 1rem;
   letter-spacing: -0.15px;
-  color: #c4c4c4;
   width: 26.7%;
   border: $gray-border;
   border-radius: 4px;
   background-color: white;
+}
+
+.add-book-form input::placeholder,
+.input-category {
+  color: #c4c4c4;
 }
 
 .input-submit {
