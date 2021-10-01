@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { ImUser } from "react-icons/im";
+import { ImUser } from 'react-icons/im';
 
 const Header = () => {
   const links = [
@@ -17,14 +17,13 @@ const Header = () => {
   ];
   return (
     <header>
-      <div className="header-left">
-        <h2 className="navbar-title">Bookstore ASD</h2>
-        <nav className="navigation">
-
-          <ul>
+      <div className="header-left f-center">
+        <h2 className="navbar-title bold">Bookstore ASD</h2>
+        <nav className="navigation f-center">
+          <ul className="navigation f-center uppercase">
             {links.map((link) => (
               <li key={link.id}>
-                <NavLink to={link.path} activeClassName="active-link" exact>
+                <NavLink to={link.path} className="dim-text" activeClassName="active-link" exact>
                   {link.text}
                 </NavLink>
               </li>
@@ -32,7 +31,7 @@ const Header = () => {
           </ul>
         </nav>
       </div>
-      <div className="header-right">
+      <div className="header-right f-center">
         <ImUser />
       </div>
     </header>

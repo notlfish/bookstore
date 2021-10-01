@@ -11,7 +11,7 @@ const BooksList = (props) => {
   const { books } = props;
 
   return (
-    <ul>
+    <ul id="books-list">
       {books.map((book) => (
         <BookItem
           key={book.id}

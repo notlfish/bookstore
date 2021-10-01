@@ -1,9 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+$theme-color: #0290ff;
+$base-color: #121212;
+$ll-gray: #e8e8e8;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  color: $base-color;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.roboto {
+  font-family: 'Roboto Slab', serif;
+}
+
+.lb-text {
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.dim-text {
+  opacity: 0.5;
+}
+
+.f-center {
+  display: flex;
+  align-items: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+  padding: 0 6.25rem;
+  height: 5.938rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $theme-color;
+  border-bottom: 1px solid $ll-gray;
+}
+
+.navbar-title {
+  margin-right: 2.938rem;
+  font-size: 1.875rem;
+}
+
+.navigation ul {
+  color: $base-color;
+  letter-spacing: 1.9px;
+}
+
+.navigation ul li {
+  margin-right: 2.563rem;
+}
+
+.active-link {
+  opacity: 1 !important;
 }
 
 .header-right {
-  color: #0290ff;
+  width: 2.813rem;
+  height: 2.813rem;
+  border: 1px solid $ll-gray;
+  border-radius: 50%;
+  justify-content: center;
+  font-size: 1.063rem;
+}
+
+main {
+  background-color: #fafafa;
+  padding: 2.375rem 6.25rem;
+}
+
+.book-entry {
+  background-color: white;
+  height: 10.625rem;
+  border: 1px solid $ll-gray;
+  border-radius: 4px;
+  padding: 0 7.2rem 0 1.688rem;
+  margin-bottom: 0.938rem;
+  justify-content: space-between;
+}
+
+.book-category {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+
+.book-title {
+  font-size: 1.375rem;
+  line-height: 1.812rem;
 }

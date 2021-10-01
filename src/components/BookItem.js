@@ -15,12 +15,12 @@ const BookItem = (props) => {
   };
 
   return (
-    <li>
+    <li className="book-entry f-center">
       <div className="book-display">
         <div className="book-info">
-          <p className="book-category">{category}</p>
-          <h4 className="book-title">{title}</h4>
-          <p className="book-author">{author}</p>
+          <p className="book-category bold dim-text">{category}</p>
+          <h4 className="book-title roboto">{title}</h4>
+          <p className="book-author lb-text">{author}</p>
         </div>
         <div className="book-actions">
           <button type="button">Comments</button>
@@ -28,7 +28,7 @@ const BookItem = (props) => {
           <button type="button">Edit</button>
         </div>
       </div>
-      <div className="book-progress">
+      <div className="book-progress f-center">
         <div className="completed-wheel">
           <div className="progress-wheel" />
           <p className="progress-percentage">
