@@ -7,7 +7,7 @@ import { addBook } from '../redux/books/books';
 // Will eventually be substituted by actual functionality.
 const defaultBookInfo = {
   chapters: 20,
-  currentChapter: 1,
+  currentChapter: Math.round(Math.random() * 19) + 1,
   category: 'Fantasy',
 };
 
