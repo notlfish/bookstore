@@ -41,7 +41,7 @@ const AddBookForm = () => {
   };
 
   return (
-    <div class="form-container">
+    <div className="form-container">
       <h2 className="form-title uppercase">Add New Book</h2>
       <form className="add-book-form" onSubmit={handleSubmit}>
         <input
