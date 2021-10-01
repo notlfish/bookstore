@@ -4,14 +4,14 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Bookstore from './components/Bookstore';
 import Categories from './components/Categories';
-import './App.css';
+import './App.scss';
 
 const App = () => (
   <Router>
-    <Navbar />
+    <Header />
     <main>
       <Switch>
         <Route path="/" exact>
