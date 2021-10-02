@@ -7,7 +7,7 @@ import { addBook } from '../redux/books/books';
 // Will eventually be substituted by actual functionality.
 const defaultBookInfo = {
   chapters: 20,
-  currentChapter: 1,
+  currentChapter: Math.round(Math.random() * 19) + 1,
   category: 'Fantasy',
 };
 
@@ -41,10 +41,11 @@ const AddBookForm = () => {
   };
 
   return (
-    <div>
-      <h2>Add New Book</h2>
+    <div className="form-container">
+      <h2 className="form-title uppercase">Add New Book</h2>
       <form className="add-book-form" onSubmit={handleSubmit}>
         <input
+          className="input-title"
           type="text"
           placeholder="Book title"
           name="title"
@@ -52,19 +53,22 @@ const AddBookForm = () => {
           onChange={handleTextChange('title')}
         />
         <input
+          className="input-author"
           type="text"
           placeholder="Author"
           value={input.author}
           name="author"
           onChange={handleTextChange('author')}
         />
-        <select placeholder="Category">
+        <select placeholder="Category" className="input-category">
           <option value="Fiction">Fiction</option>
           <option value="Fantasy">Fantasy</option>
           <option value="Magic Realism">Magic Realism</option>
           <option value="Essay">Essay</option>
         </select>
-        <button type="submit">Add book </button>
+        <button type="submit" className="input-submit uppercase">
+          Add book
+        </button>
       </form>
     </div>
   );
