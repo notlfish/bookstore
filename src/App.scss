@@ -30,7 +30,6 @@ a {
 }
 
 .lb-text {
-  font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
   line-height: 1.188rem;
   font-weight: 300;
@@ -80,7 +79,7 @@ header {
 }
 
 .active-link {
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 .header-right {

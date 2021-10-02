@@ -22,12 +22,18 @@ const BookItem = (props) => {
         <div className="book-info">
           <p className="book-category bold dim-text">{category}</p>
           <h4 className="book-title roboto">{title}</h4>
-          <p className="book-author lb-text">{author}</p>
+          <p className="book-author lb-text roboto">{author}</p>
         </div>
         <div className="book-actions">
-          <button className="lb-text" type="button">Comments</button>
-          <button className="lb-text" onClick={handleRemove} type="button">Remove</button>
-          <button className="lb-text" type="button">Edit</button>
+          <button className="lb-text roboto" type="button">
+            Comments
+          </button>
+          <button className="lb-text roboto" onClick={handleRemove} type="button">
+            Remove
+          </button>
+          <button className="lb-text roboto" type="button">
+            Edit
+          </button>
         </div>
       </div>
       <div className="book-progress f-center">
